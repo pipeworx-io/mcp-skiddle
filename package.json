@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-skiddle",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Skiddle MCP.",
   "type": "module",
   "main": "src/index.ts",

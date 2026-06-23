@@ -149,9 +149,10 @@ interface SkiddleEvent {
   largeimageurl?: string;
   link?: string;
   EventCode?: string;
-  MinAge?: string | number;
+  minage?: string | number;
   entryprice?: string;
-  going?: string | number;
+  imgoing?: string | number;
+  goingtocount?: string | number;
 }
 
 function normalize(e: SkiddleEvent): Record<string, unknown> {
@@ -163,9 +164,9 @@ function normalize(e: SkiddleEvent): Record<string, unknown> {
     date: e.date,
     end_date: e.enddate && e.enddate !== e.date ? e.enddate : undefined,
     doors_open: e.openingtimes?.doorsopen || undefined,
-    min_age: e.MinAge || undefined,
+    min_age: e.minage || undefined,
     price: e.entryprice || undefined,
-    going: e.going || undefined,
+    going: e.imgoing ?? e.goingtocount ?? undefined,
     venue: v
       ? {
           name: v.name,
