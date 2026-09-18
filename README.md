@@ -79,3 +79,13 @@ The gateway picks the right tool and fills the arguments automatically.
 ## License
 
 MIT
+
+## No MCP client? Call it over HTTP
+
+```bash
+curl -X POST https://gateway.pipeworx.io/v1/tools/skiddle_search_events \
+  -H 'Content-Type: application/json' \
+  -d '{"latitude":51.5074,"longitude":-0.1278,"radius":10,"keyword":"techno","limit":20}'
+```
+
+No account needed for the first calls. Inspect any tool: `GET https://gateway.pipeworx.io/v1/tools/skiddle_search_events`. Find one: `POST https://gateway.pipeworx.io/v1/tools/search_packs` with `{"query":"..."}`.
