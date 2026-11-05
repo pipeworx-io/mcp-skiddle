@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-skiddle",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Skiddle MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "skiddle",
     "gatewaySlug": "skiddle",
-    "sourceHash": "v1-3f384c6c9fe653578706fef08502001a83dbeeaa00babc42e6b4ba65f41f28bf",
-    "sourceCommit": "f47d581679e1e887373df51ba623f891fbe4c464"
+    "sourceHash": "v1-f47d5b5bf605f0a963d979b66033c5b1333b2320a5d35942c3bd0fa3ff00fc4c",
+    "sourceCommit": "8fc802aa5e23be625ce08d97178f5676c7bc93f3"
   }
 }
